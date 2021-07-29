@@ -25,7 +25,18 @@ while (counter < 25) {
     counter += 1;
 }
 
+// function to cross the on clicking
+function cross(id) {
+    let box = document.getElementById(id);
+    let num = box.innerHTML
+    box.onclick = null;
+    box.innerHTML = `${num}<i style="font-size:16px" class="fas fa-times"></i>`
+    // console.log(box);
+}
 
-// let boxNo = () => {
+// function to change the color 
+function bingoFun(id) {
+    let box = document.getElementById(id);
+    box.classList.toggle('red')
+}
 
-// }
