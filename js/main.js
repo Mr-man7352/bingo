@@ -1,10 +1,10 @@
 let numberArray = [];
 let boardArray = [] // this array will contain actual random numbers
-let nArrayCounter = 0
+let nArrayCounter = 1
 let counter = 0
 
 // this loop will populate numberArray, from which we will generate boardArray
-while (nArrayCounter < 25) {
+while (nArrayCounter < 26) {
     numberArray.push(nArrayCounter);
     nArrayCounter += 1
 }
@@ -26,3 +26,6 @@ while (counter < 25) {
 }
 
 
+// let boxNo = () => {
+
+// }
