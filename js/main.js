@@ -30,6 +30,7 @@ function cross(id) {
     let box = document.getElementById(id);
     let num = box.innerHTML
     box.onclick = null;
+    box.classList.add('boxRed')
     box.innerHTML = `${num}<i style="font-size:16px" class="fas fa-times"></i>`
     // console.log(box);
 }
