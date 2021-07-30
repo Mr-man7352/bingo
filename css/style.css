@@ -43,6 +43,11 @@
     background-color: indianred;
 }
 
+.paired {
+    background-color: #572222fa;
+    color: white;
+}
+
 /* .flex-row-container {
     background: #aaa;
     display: flex;
