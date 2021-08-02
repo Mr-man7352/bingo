@@ -66,17 +66,27 @@ function bingoFun(id) {
     box.classList.toggle('red')
 }
 
+// function get an array of elements which is to be coloured
 function crossedElements(arrayOfCrossedElements) {
+    let pairingIsDone = 'paired'
+    if (verticalElements.includes(arrayOfCrossedElements)) {
+        pairingIsDone = 'verticalPaired'
+    }
+    else if (horizontalElements.includes(arrayOfCrossedElements)) {
+        pairingIsDone = 'horizontalPaired'
+    }
     let i = 0;
     while (i < 5) {
-        crossedElement(arrayOfCrossedElements[i])
+        crossedElement(arrayOfCrossedElements[i], pairingIsDone)
         i += 1;
     }
 }
 
-function crossedElement(id) {
+// function get an element which is to be coloured according its pairing state
+function crossedElement(id, pairingIsDone) {
     let box = document.getElementById(id);
-    box.classList.add('paired');
+    box.classList.add(`${pairingIsDone}`);
+    // console.log(pairingIsDone)
 
 }
 

@@ -10,6 +10,7 @@
 
 .board {
     width: 380px;
+    border-radius: 28px;
     font-size: 22px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -20,10 +21,13 @@
     height: 310px;
     margin: 0 auto;
     margin-top: 44px;
+    box-shadow: 4px 6px 11px rgb(0 0 0 / 68%);
 }
 
 .box {
     /* border: 2px solid black; */
+    border-radius: 150px;
+    border: 2px solid #e75656;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -45,6 +49,16 @@
 
 .paired {
     background-color: #572222fa;
+    color: white;
+}
+
+.verticalPaired {
+    background-color: #d0b00e;
+    color: white;
+}
+
+.horizontalPaired {
+    background-color: #3ae324fa;
     color: white;
 }
 
